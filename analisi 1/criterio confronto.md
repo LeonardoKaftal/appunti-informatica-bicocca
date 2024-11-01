@@ -1,4 +1,4 @@
-$` \documentclass{article}
+\documentclass{article}
 \usepackage{amsmath} % per il simbolo di sommatoria e altre funzioni matematiche
 
 \begin{document}
@@ -40,4 +40,4 @@ Poiché la serie armonica generalizzata $\sum_{n=1}^{\infty} \frac{1}{n^2}$ conv
 
 Poiché la serie armonica generalizzata $\sum_{n=1}^{\infty} \frac{1}{n^2}$ converge (con esponente maggiore di 1), per il punto 1 del teorema, anche la serie $\sum_{n=1}^{\infty} \frac{\sin^2(n)}{n^2}$ converge.
 
-\end{document} `$
+\end{document}
