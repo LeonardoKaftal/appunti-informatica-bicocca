@@ -1,1 +1,1 @@
-# Si tenga presente che la capacità di github di renderizzare LaTeX (espressioni matematiche anche) è piuttosto limitata, se si vuole visualizzare meglio gli appunti si consiglia di copiare su Overleaf il file MD interressato.
+# Si tenga presente che la capacità di github di renderizzare LaTeX (espressioni matematiche anche) è piuttosto limitata, quello che consiglio di fare è di incollare il contenuto del file interessato qui dentro: https://it.overleaf.com/
