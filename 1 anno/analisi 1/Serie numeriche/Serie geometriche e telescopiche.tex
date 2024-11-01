@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\geometry{margin=1in}
+\renewcommand{\baselinestretch}{1.2} % Aumenta la spaziatura tra le righe
+
+\begin{document}
+
+\section*{\LARGE Le Serie Geometriche e Telescopiche}
+
+\subsection*{\large Serie Geometriche}
+
+Una serie è detta \textbf{geometrica} quando è del tipo
+\[
+\sum_{n=0}^\infty q^n
+\]
+con $q \in \mathbb{R}$. Per valutare la convergenza, basta analizzare il valore di $q$.
+
+Se $q \neq 1$ allora la somma parziale $S_n$ è data da:
+\[
+S_n = \frac{1 - q^{n+1}}{1 - q}
+\]
+
+Se invece $q = 1$, allora:
+\[
+S_n = n + 1
+\]
+
+\textbf{Nota Importante}: La somma della serie geometrica è:
+\[
+\sum_{n=0}^\infty q^n = \frac{1}{1 - q} \quad \text{se } |q| < 1
+\]
+Per determinare la convergenza o divergenza della serie, si seguono questi criteri:
+
+\begin{enumerate}
+    \item Se $0 < q < 1$, la serie \textbf{converge}.
+    \item Se $q > 1$, la serie \textbf{diverge} a $+\infty$ poiché $q^{n+1} \to +\infty$.
+    \item Se $q \leq -1$, la serie è \textbf{indeterminata}.
+\end{enumerate}
+
+\paragraph{Esempio}
+
+Consideriamo la serie geometrica
+\[
+\sum_{n=0}^\infty \left(\frac{1}{2}\right)^n
+\]
+Qui $q = \frac{1}{2}$, con $0 < q < 1$, quindi la serie converge. La somma parziale è data da
+\[
+\frac{1}{1 - q} = \frac{1}{1 - \frac{1}{2}} = 2
+\]
+quindi la serie converge a 2.
+
+\subsection*{\large Serie di Mengoli}
+
+Una serie di questo tipo è definita come:
+\[
+\sum_{n=1}^\infty \frac{1}{n(n+1)}
+\]
+Il termine generale $A_n$ può essere riscritto come:
+\[
+A_n = \frac{1}{n} - \frac{1}{n + 1}
+\]
+Quindi, la somma parziale $S_n$ semplifica tutti i termini tranne il primo e l'ultimo:
+\[
+S_n = 1 - \frac{1}{n + 1}
+\]
+
+Calcolando il limite:
+\[
+\lim_{n \to \infty} S_n = 1
+\]
+quindi la serie \textbf{converge} e la somma è 1.
+
+\paragraph{Nota Importante} La serie di Mengoli è un esempio di \textbf{serie telescopica}. Un altro esempio è
+\[
+\sum_{n=1}^\infty \ln \left(1 + \frac{1}{n}\right)
+\]
+che \textbf{diverge} a $+\infty$.
+
+\paragraph{Importante} Per capire se una serie converge, è necessario verificare se il termine generale $A_n$ tende a zero all'infinito.
+
+\end{document}
