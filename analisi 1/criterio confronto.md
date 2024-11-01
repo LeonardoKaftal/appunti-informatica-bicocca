@@ -1,4 +1,8 @@
- Siano $A_n$ e $B_n$ due serie tali che $A_n \leq B_n$ per ogni $n$. Allora:
+$` \documentclass{article}
+\usepackage{amsmath} 
+\begin{document}
+
+Siano $A_n$ e $B_n$ due serie tali che $A_n \leq B_n$ per ogni $n$. Allora:
 
 \begin{enumerate}
     \item **Convergenza:** Se la serie $\sum_{n=1}^{\infty} B_n$ converge, allora anche la serie $\sum_{n=1}^{\infty} A_n$ converge.
@@ -30,3 +34,4 @@ $$\frac{\sin^2(n)}{n^2} \leq \frac{1}{n^2}$$
 
 Poiché la serie armonica generalizzata $\sum_{n=1}^{\infty} \frac{1}{n^2}$ converge (con esponente maggiore di 1), per il punto 1 del teorema, anche la serie $\sum_{n=1}^{\infty} \frac{\sin^2(n)}{n^2}$ converge.
 
+\end{document} `$
