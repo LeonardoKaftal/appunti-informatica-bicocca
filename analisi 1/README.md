@@ -1,0 +1,1 @@
+Si tenga presente che la capacità di github di renderizzare LaTeX (espressioni matematiche anche) è piuttosto limitata, se si vuole visualizzare integralmente il documento si consiglia di usare Overleaf.
