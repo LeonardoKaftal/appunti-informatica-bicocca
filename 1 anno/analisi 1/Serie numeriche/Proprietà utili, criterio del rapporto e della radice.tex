@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}  % Imposta una dimensione del carattere più grande
+\usepackage{amsmath}           % Pacchetto per formule matematiche avanzate
+\usepackage{amsfonts}          % Pacchetto per i font matematici
+\usepackage{geometry}          % Per gestire i margini del documento
+\geometry{a4paper, margin=1in} % Margini per migliorare la leggibilità
+
+\begin{document}
+
+\section*{Criterio del Rapporto, Criterio della Radice e Proprietà Utili}
+
+\subsection*{Proprietà Utili}
+
+\begin{enumerate}
+    \item Se abbiamo $\sum_{n=0}^{\infty} (A_n + B_n)$, possiamo riscriverla come la somma delle singole serie:
+    \[
+    \sum_{n=0}^{\infty} A_n + \sum_{n=0}^{\infty} B_n,
+    \]
+    dove $A_n$ e $B_n$ sono due serie numeriche convergenti.
+
+    \item Se abbiamo $\sum_{n=0}^{\infty} K A_n$, dove $K$ è una costante, si può riscrivere come
+    \[
+    K \cdot \sum_{n=0}^{\infty} A_n.
+    \]
+
+    \item \textbf{Importante}: Una serie $\sum_{n=0}^{\infty} A_n$ a termini non negativi, con $A_n \geq 0$, può convergere a $0$ o divergere a $+\infty$. \textbf{Non può essere indeterminata}.
+\end{enumerate}
+
+Un esempio è la serie $\sum_{n=0}^{\infty} \frac{n^2 + 3^{-n}}{n^2 - 5}$, che non può convergere poiché $A_n$ tende a $1$ per $n \to \infty$. Perché converga, il limite di $A_n$ dovrebbe essere $0$.
+
+\subsection*{Criterio del Rapporto}
+
+Sia $A_n > 0$ definitivamente. Consideriamo il limite
+\[
+\lim_{n \to \infty} \frac{A_{n+1}}{A_n} = L \in [0, +\infty).
+\]
+Allora, se:
+\begin{enumerate}
+    \item $L < 1$, la serie $\sum_{n=0}^{\infty} A_n$ converge.
+    \item $L > 1$, la serie $\sum_{n=0}^{\infty} A_n$ diverge.
+    \item $L = 1$, il criterio non fornisce informazioni, quindi è necessario usare un altro criterio.
+\end{enumerate}
+
+\subsection*{Criterio della Radice}
+
+Sia $A_n \geq 0$ definitivamente. Consideriamo il limite
+\[
+\lim_{n \to \infty} \sqrt[n]{A_n} = L.
+\]
+Allora, se:
+\begin{enumerate}
+    \item $L < 1$, la serie $\sum_{n=0}^{\infty} A_n$ converge.
+    \item $L > 1$, la serie $\sum_{n=0}^{\infty} A_n$ diverge.
+    \item $L = 1$, il criterio non fornisce informazioni, quindi è necessario usare un altro criterio.
+\end{enumerate}
+
+Questo criterio consiste nel prendere la radice $n$-esima del termine generale $A_n$.
+
+\subsection*{Esempio}
+
+Consideriamo la serie
+\[
+\sum_{n=2}^{\infty} \frac{1}{\log(n)^{\frac{n}{2}}}.
+\]
+Applicando il criterio della radice:
+\[
+\lim_{n \to \infty} \left( \log(n)^{-\frac{n}{2}} \right)^{\frac{1}{n}} = \lim_{n \to \infty} \log(n)^{-\frac{1}{2}} = \lim_{n \to \infty} \frac{1}{\sqrt{\log(n)}} = 0 < 1.
+\]
+Quindi la serie converge.
+
+\end{document}
