@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{Large}
+
+Una serie a termini alterni si presenta come una successione a termini alterni, per esempio:
+
+\[
+\sum_{n=1}^{\infty} (-1)^{n+1} \cdot \frac{1}{n}
+\]
+
+questa risulta \(1\), \(-\frac{1}{2}\), \(+\frac{1}{3}\), \(-\frac{1}{4}\), \(+\frac{1}{5}\), \(\ldots\)
+
+Per questi tipi di serie si applica il criterio di Leibniz, che dice che una serie a termini alterni
+
+\[
+\sum_{n=0}^{\infty} (-1)^{n} \cdot A_n
+\]
+
+la serie converge SE:
+
+\begin{enumerate}
+    \item Il limite per \(n\) che tende a infinito del termine \(A_n\) è 0 (infinitesimo).
+    \item La successione \(|A_1|\), \(|A_2|\), \(|A_3|\), \(\ldots\), \(|A_n|\) DEVE ESSERE DECRESCENTE.
+\end{enumerate}
+
+\end{Large}
+
+\end{document}
