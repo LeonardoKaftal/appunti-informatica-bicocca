@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+\Huge
+
+\textbf{Punti di non derivabilità:}  
+I punti di non derivabilità includono:  
+\begin{itemize}
+    \item Punto angoloso
+    \item Cuspide
+    \item Flesso a tangente verticale
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Punto angoloso:}  
+Consideriamo un punto \( x_0 \) in cui la funzione è continua.  
+C'è un punto angoloso quando:  
+\[
+\lim_{x \to x_0^-} f'(x) = m_1 \quad \text{(numero finito)} \quad \text{ed esiste anche} \quad \lim_{x \to x_0^+} f'(x) = m_2
+\]
+con \( m_1 \neq m_2 \).
+
+Per esempio, una funzione con punto angoloso è:  
+\[
+f(x) = 
+\begin{cases} 
+-\arctan(x) & \text{se } x < 0 \\ 
+\arctan(x) & \text{se } x \geq 0
+\end{cases}
+\]
+
+Per \( x < 0 \), la derivata è:  
+\[
+-\frac{1}{1 + x^2}
+\]
+Per \( x > 0 \), la derivata è:  
+\[
+\frac{1}{1 + x^2}
+\]
+
+Calcoliamo i limiti:  
+\[
+\lim_{x \to 0^-} \left( -\frac{1}{1 + x^2} \right) = -1
+\]
+\[
+\lim_{x \to 0^+} \left( \frac{1}{1 + x^2} \right) = 1
+\]
+I due limiti sono diversi, quindi il punto \( x = 0 \) è un punto angoloso.
+
+\vspace{0.5cm}
+
+\textbf{Punto di cuspide:}  
+Si ha un punto di cuspide quando:  
+\[
+\lim_{x \to x_0^-} f'(x) = +\infty \quad \text{e} \quad \lim_{x \to x_0^+} f'(x) = -\infty
+\]
+(oppure il contrario, basta che siano opposti).
+
+Per esempio, consideriamo:
+\[
+f(x) = \sqrt[3]{x^2} + 1
+\]
+La derivata è:
+\[
+f'(x) = \frac{2}{3} \cdot \frac{x}{\sqrt[3]{x^2}}
+\]
+
+Calcoliamo i limiti:  
+\[
+\lim_{x \to 0^-} f'(x) = -\infty \quad \text{e} \quad \lim_{x \to 0^+} f'(x) = +\infty
+\]
+Quindi \( x = 0 \) è un punto di cuspide.
+
+\vspace{0.5cm}
+
+\textbf{Flesso a tangente verticale:}  
+Una funzione ha un flesso a tangente verticale di non derivabilità quando il limite da destra e da sinistra risulta \( +\infty \) o \( -\infty \).
+
+Per esempio:
+\[
+f(x) = \sqrt[3]{x} + 1
+\]
+La derivata è:  
+\[
+f'(x) = \frac{1}{3} \cdot x^{-2/3} = \frac{1}{3} \cdot \frac{1}{\sqrt[3]{x^2}}
+\]
+
+Calcoliamo i limiti:
+\[
+\lim_{x \to 0^-} f'(x) = +\infty \quad \text{e} \quad \lim_{x \to 0^+} f'(x) = +\infty
+\]
+Quindi \( x = 0 \) è un flesso a tangente verticale.
+
+\end{document}
