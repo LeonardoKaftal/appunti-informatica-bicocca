@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+\Huge
+
+\textbf{Regole di derivazione:}  
+
+\vspace{0.5cm}
+
+1. \textbf{Somma di funzioni:}  
+Se \( f(x) = a(x) + b(x) + c(x) \), allora la derivata si calcola derivando ogni termine:  
+\[
+f'(x) = a'(x) + b'(x) + c'(x)
+\]
+
+\vspace{0.5cm}
+
+2. \textbf{Prodotto di funzioni:}  
+Se \( f(x) = a(x) \cdot b(x) \cdot c(x) \), allora la derivata è:  
+\[
+f'(x) = a'(x) \cdot b(x) \cdot c(x) + b'(x) \cdot a(x) \cdot c(x) + c'(x) \cdot a(x) \cdot b(x)
+\]
+
+\vspace{0.5cm}
+
+3. \textbf{Rapporto di funzioni:}  
+Se \( f(x) = \frac{a(x)}{b(x)} \), allora la derivata è:  
+\[
+f'(x) = \frac{a'(x) \cdot b(x) - b'(x) \cdot a(x)}{b(x)^2}
+\]
+
+\vspace{0.5cm}
+
+\textbf{Funzioni composte:}  
+
+\vspace{0.5cm}
+
+\begin{enumerate}
+    \item Se \( f(x) = \big(g(x)\big)^a \), allora:  
+    \[
+    f'(x) = a \cdot \big(g(x)\big)^{a - 1} \cdot g'(x)
+    \]
+
+    \vspace{0.5cm}
+
+    \item Se \( f(x) = a^{g(x)} \), allora:  
+    \[
+    f'(x) = a^{g(x)} \cdot \ln(a) \cdot g'(x)
+    \]
+
+    \vspace{0.5cm}
+
+    \item Se \( f(x) = \ln(g(x)) \), allora:  
+    \[
+    f'(x) = \frac{1}{g(x)} \cdot g'(x)
+    \]
+\end{enumerate}
+
+\end{document}
