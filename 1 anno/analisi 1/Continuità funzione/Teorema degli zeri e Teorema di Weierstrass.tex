@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+\Huge
+
+\section*{Teorema degli Zeri}
+
+Consideriamo una funzione \( f(x): X \to \mathbb{R} \).  
+Un punto \( x_0 \in X \) è uno \textbf{zero} della funzione se \( f(x_0) = 0 \), ovvero il punto in cui la funzione interseca l'asse delle ascisse.  
+Se la funzione non interseca l'asse delle ascisse, non possiede zeri.  
+
+\vspace{0.5cm}
+
+\textbf{Ipotesi del teorema:}  
+Sia \( f: [a, b] \to \mathbb{R} \), una funzione continua su tutto l'intervallo chiuso \([a, b]\).  
+Inoltre, supponiamo che:  
+\[
+f(a) > 0 \quad \text{e} \quad f(b) < 0
+\]
+
+\vspace{0.5cm}
+
+\textbf{Conclusione:}  
+Se le condizioni sono verificate, allora esiste almeno un punto \( x_0 \in (a, b) \) (interno all'intervallo) tale che:  
+\[
+f(x_0) = 0
+\]
+
+\vspace{1cm}
+
+\section*{Teorema di Weierstrass}
+
+Consideriamo una funzione \( f(x) \) definita su un intervallo chiuso e limitato \([a, b]\) (o più in generale su un insieme chiuso e limitato) e supponiamo che \( f(x) \) sia \textbf{continua} su tale intervallo.  
+
+\vspace{0.5cm}
+
+\textbf{Conclusione:}  
+In queste condizioni, esistono il massimo assoluto e il minimo assoluto della funzione \( f(x) \) sull'intervallo \([a, b]\).  
+In altre parole, esistono \( x_{\text{max}}, x_{\text{min}} \in [a, b] \) tali che:  
+\[
+f(x_{\text{max}}) \geq f(x) \quad \text{e} \quad f(x_{\text{min}}) \leq f(x), \quad \forall x \in [a, b]
+\]
+
+\end{document}

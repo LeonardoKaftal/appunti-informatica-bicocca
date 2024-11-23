@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+\Huge
+
+\textbf{Continuità di una funzione:}  
+
+Consideriamo una funzione \( f(x): X \to Y \).  
+Nel punto \( x_0 \), \( f(x) \) è continua quando si verificano le seguenti tre condizioni:  
+
+\begin{enumerate}
+    \item \( f(x_0) \) deve esistere, e quindi \( x_0 \) deve appartenere al dominio della funzione.
+    \item Esiste \textbf{finito} il limite:  
+    \[
+    \lim_{x \to x_0} f(x) = L
+    \]
+    \item Deve essere verificata l'uguaglianza:  
+    \[
+    f(x_0) = L
+    \]
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\textbf{Esempio:}  
+
+Sia \( f(x) = x^2 + |x - 1| \).  
+Verifichiamo se la funzione è continua nel punto \( x = 1 \):  
+
+\begin{itemize}
+    \item Calcoliamo \( f(1) \):  
+    \[
+    f(1) = 1^2 + |1 - 1| = 1 + 0 = 1
+    \]
+
+    \item Calcoliamo il limite:  
+    \[
+    \lim_{x \to 1} \big(x^2 + |x - 1|\big) = 1
+    \]
+
+    \item Verifichiamo che \( f(1) = \lim_{x \to 1} f(x) \):  
+    \[
+    f(1) = 1 \quad \text{e} \quad \lim_{x \to 1} f(x) = 1
+    \]
+    Entrambi coincidono.
+\end{itemize}
+
+\vspace{0.5cm}
+
+Quindi, la funzione \( f(x) \) è continua nel punto \( x = 1 \).
+
+\end{document}
