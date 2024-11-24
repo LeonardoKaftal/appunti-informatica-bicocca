@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+\Huge
+
+\section*{Teorema di Fermat}
+
+Sia \( f(x) \) una funzione continua e limitata su un intervallo chiuso \([a, b]\), e derivabile nei punti interni \((a, b)\) (esclusi i punti di frontiera).  
+
+\vspace{0.5cm}
+
+\textbf{Condizioni necessarie:}
+\begin{enumerate}
+    \item La funzione \( f(x) \) deve essere \textbf{continua e limitata} su \([a, b]\).
+    \item Deve esistere almeno un punto di \textbf{massimo} o di \textbf{minimo} assoluto.  
+    \item Il punto di massimo o minimo, denotato come \( x_0 \), deve essere interno all'intervallo \((a, b)\), ovvero \( x_0 \notin \{a, b\}\).
+    \item La funzione deve essere derivabile nel punto \( x_0 \).
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\textbf{Conclusione:}  
+Nel punto di massimo o minimo interno \( x_0 \), la derivata prima si annulla:
+\[
+f'(x_0) = 0
+\]
+
+\vspace{1cm}
+
+\section*{Osservazioni:}
+
+\begin{itemize}
+    \item Se la funzione \( f(x) \) ha un massimo o minimo assoluto su un intervallo, deve verificarsi almeno in un punto. 
+    \item Tale punto può essere interno (derivabile, con \( f'(x_0) = 0 \)) oppure sulla frontiera (non richiede derivabilità).
+    \item Il teorema richiede che il massimo e il minimo considerati siano interni per garantire che \( f'(x_0) = 0 \).
+\end{itemize}
+\end{document}
