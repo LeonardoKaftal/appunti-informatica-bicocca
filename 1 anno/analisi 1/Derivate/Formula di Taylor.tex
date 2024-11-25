@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+
+\section*{La Formula di Taylor e Maclaurin}
+
+Consideriamo una funzione \( f(x) \) definita su un intervallo \( I \), con un punto \( a \in I \). Fissiamo un numero naturale \( n \in \mathbb{N} \). Supponiamo che esistano le derivate \( f'(x), f''(x), \ldots, f^{(n-1)}(x) \) e \( f^{(n)}(x) \), almeno nel punto \( x = a \). 
+
+Vogliamo determinare un polinomio \( P_n(x) \) tale che:
+\[
+P(a) = f(a), \quad P'(a) = f'(a), \quad P''(a) = f''(a), \ldots, \quad P^{(n)}(a) = f^{(n)}(a).
+\]
+
+Il polinomio \( P_n(x) \) assume la forma:
+\[
+P_n(x) = c_0 + c_1(x-a) + c_2(x-a)^2 + c_3(x-a)^3 + \cdots + c_n(x-a)^n.
+\]
+
+Calcoliamo le derivate successive:
+\begin{align*}
+P'(x) &= c_1 + 2c_2(x-a) + 3c_3(x-a)^2 + \cdots + n c_n (x-a)^{n-1}, \\
+P''(x) &= 2c_2 + 3 \cdot 2 c_3(x-a) + \cdots + n(n-1)c_n (x-a)^{n-2}, \\
+P^{(n)}(x) &= n! c_n.
+\end{align*}
+
+Notiamo che:
+\begin{align*}
+P_n(a) &= c_0 = f(a), \\
+P'(a) &= c_1 = f'(a), \\
+P''(a) &= 2c_2 = f''(a) \implies c_2 = \frac{f''(a)}{2!}, \\
+P'''(a) &= 3 \cdot 2 c_3 = f'''(a) \implies c_3 = \frac{f'''(a)}{3!}, \\
+\vdots \\
+P^{(n)}(a) &= n! c_n = f^{(n)}(a) \implies c_n = \frac{f^{(n)}(a)}{n!}.
+\end{align*}
+
+Quindi il polinomio di Taylor diventa:
+\[
+P_n(x) = f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n.
+\]
+
+\subsection*{Esempio}
+
+Consideriamo \( f(x) = e^x \), con \( a = 0 \) e \( n = 3 \). Le derivate sono:
+\[
+f(x) = e^x, \quad f'(x) = e^x, \quad f''(x) = e^x, \quad f'''(x) = e^x.
+\]
+
+Nel punto \( x = 0 \), tutte le derivate sono uguali a 1: \( f(0) = f'(0) = f''(0) = f'''(0) = 1 \).
+
+Utilizzando la formula di Taylor, otteniamo:
+\[
+P_3(x) = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 = 1 + x + \frac{x^2}{2} + \frac{x^3}{6}.
+\]
+
+\subsection*{Forma Generale del Polinomio di Taylor}
+
+Il polinomio di Taylor si può esprimere come:
+\[
+f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k + R_n(x),
+\]
+dove \( R_n(x) \) è il resto di Lagrange.
+
+\end{document}
