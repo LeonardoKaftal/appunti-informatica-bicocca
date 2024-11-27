@@ -1,30 +1,87 @@
-i numeri naturali si indicano con N e sono tutti i numeri interi positivi, N = {0,1,2,3 .... n, n+1}
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
 
-l'induzione è il processo che definisce che una prorpietà generica in tutto N <--> è vera
-in 0 e se vera in n e vera anche in S(n), questa dimostra che un elemento è sempre più
-piccolo del successore. 
+\begin{document}
 
-l'insieme Z sono tutti i numeri interi, n è sottoinsieme proprio di Z, N C Z, 
+\section*{Insiemi Numerici e Cardinalità}
 
-Il valore assoluto di un numero intero è il numero privo di segno, (il suo opposto)
+\subsection*{Numeri Naturali (\( \mathbb{N} \))}
+I numeri naturali sono l'insieme di tutti i numeri interi positivi, incluso lo zero:
+\[
+\mathbb{N} = \{0, 1, 2, 3, \ldots, n, n+1, \ldots\}.
+\]
 
-i numeri razionali sono i rapporti m/n tra due numeri interi, si indica con Q, Z C Q
+\subsubsection*{Induzione}
+L'induzione è il processo che verifica una proprietà su tutti gli elementi di \( \mathbb{N} \). Si basa sul seguente schema:
+\[
+P(0) \text{ è vera} \quad \text{e} \quad \left[P(n) \Rightarrow P(S(n)) \right],
+\]
+dove \( S(n) \) è il successore di \( n \). Questo dimostra che ogni elemento è più piccolo del suo successore.
 
-Un sottoinsieme proprio C quando nel sottoinsieme non è incluso almeno un elemento dell'insieme
+\subsection*{Numeri Interi (\( \mathbb{Z} \))}
+L'insieme dei numeri interi \( \mathbb{Z} \) comprende tutti i numeri naturali e i loro opposti:
+\[
+\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}.
+\]
+L'insieme \( \mathbb{N} \) è un sottoinsieme proprio di \( \mathbb{Z} \), ovvero \( \mathbb{N} \subset \mathbb{Z} \), perché non contiene numeri negativi.
 
-I numeri irrazionali sono numeri non esprimibili da frazioni EG: e o pigreco e si indica con I
+\subsubsection*{Valore Assoluto}
+Il valore assoluto di un numero intero è il numero privo di segno, cioè:
+\[
+|x| =
+\begin{cases} 
+x & \text{se } x \geq 0, \\ 
+-x & \text{se } x < 0.
+\end{cases}
+\]
 
-L'insieme dei reali si indica con R ed è l'unione U tra Q ed I
+\subsection*{Numeri Razionali (\( \mathbb{Q} \))}
+I numeri razionali sono espressi come il rapporto \( \frac{m}{n} \), dove \( m, n \in \mathbb{Z} \) e \( n \neq 0 \). Si indica con:
+\[
+\mathbb{Q} = \left\{\frac{m}{n} \; \middle| \; m \in \mathbb{Z}, \; n \in \mathbb{Z} \setminus \{0\} \right\}.
+\]
+Anche in questo caso, \( \mathbb{Z} \) è un sottoinsieme proprio di \( \mathbb{Q} \), ovvero \( \mathbb{Z} \subset \mathbb{Q} \).
 
-un sistema `e discreto se costituito da elementi isolati e continuo se non vi sono spazi vuoti
-In matematica, discreto si bassa sul concetto di cardinalità Un insieme `e discreto se (e solo se) i suoi elementi si
-possono numerare
+\subsection*{Numeri Irrazionali (\( \mathbb{I} \))}
+I numeri irrazionali sono numeri che non possono essere espressi come una frazione \( \frac{m}{n} \). Alcuni esempi sono:
+\[
+\pi, \; e, \; \sqrt{2}.
+\]
 
-La cardinalità è il numero degli elementi in un insieme, dato un insieme A si dice la card
-|A|. l'insieme degli N è numerabile perchè a 1 posso associare 1 ecc.... , anche gli insiemi
-finiti sono numerabili, ANCHE I NUMERI RAZIONALI Q SONO NUMERABILI tramite un piano cartesiano
+\subsection*{Numeri Reali (\( \mathbb{R} \))}
+L'insieme dei numeri reali è dato dall'unione dei numeri razionali e irrazionali:
+\[
+\mathbb{R} = \mathbb{Q} \cup \mathbb{I}.
+\]
 
-l'insieme senza elementi si rappresenta con "Simbolo insieme vuoto"
+\subsection*{Sistemi Discreti e Continui}
+Un sistema è:
+\begin{itemize}
+    \item \textbf{Discreto:} se costituito da elementi isolati. Un insieme discreto ha una cardinalità numerabile.
+    \item \textbf{Continuo:} se non presenta spazi vuoti tra i suoi elementi.
+\end{itemize}
 
-Ci sono due rappresentazioni, la rappresentazione estensionale consiste nell'elencare espli
-citamente ogni elemento dell'insieme, l'ordine è irrilevante.
+\subsection*{Cardinalità}
+La cardinalità \( |A| \) di un insieme \( A \) rappresenta il numero dei suoi elementi. 
+\begin{itemize}
+    \item L'insieme \( \mathbb{N} \) è numerabile perché possiamo associare ogni numero naturale a un elemento univoco.
+    \item Anche \( \mathbb{Q} \) è numerabile. Questo può essere dimostrato attraverso un piano cartesiano che ordina le coppie \( (m, n) \).
+    \item L'insieme vuoto (\( \varnothing \)) non ha elementi, quindi \( |\varnothing| = 0 \).
+\end{itemize}
+
+\subsection*{Rappresentazione degli Insiemi}
+Esistono due rappresentazioni principali per descrivere un insieme:
+\begin{enumerate}
+    \item \textbf{Estensionale:} si elencano esplicitamente tutti gli elementi dell'insieme. Ad esempio:
+    \[
+    A = \{1, 2, 3\}.
+    \]
+    L'ordine degli elementi è irrilevante.
+    \item \textbf{Intensionale:} si specificano le proprietà che caratterizzano gli elementi dell'insieme. Ad esempio:
+    \[
+    B = \{x \in \mathbb{N} \; | \; x \text{ è pari}\}.
+    \]
+\end{enumerate}
+
+\end{document}
