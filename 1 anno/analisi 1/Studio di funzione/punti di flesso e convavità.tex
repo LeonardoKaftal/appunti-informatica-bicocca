@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+\section*{Concetto Grafico}
+
+Considerando un punto $P_0$ nel grafico di una funzione e il coefficiente angolare di una retta tangente, consideriamo un suo intorno $x_0 - \delta$ e $x_0 + \delta$. In questo intorno, se la funzione valutata in un qualsiasi punto $c$ piccolo ha ordinata maggiore rispetto al corrispettivo considerato sulla retta tangente ("la funzione va verso l'alto"), allora la funzione è 	extbf{convessa}.
+
+Se si verifica il caso contrario ("la funzione va verso il basso"), allora la funzione è 	extbf{concava}.
+
+Si verifica un 	extbf{punto di flesso} se in un intorno di $x_0$ la funzione è convessa a sinistra e concava a destra.
+
+\section*{Definizione Formale}
+
+Considerando $f:(a,b)$ derivabile in $(a,b)$ e $x_0 \in (a,b)$:
+
+\begin{enumerate}
+\item Se $f''(x_0) > 0$, la funzione è 	convessa.
+\item Se $f''(x_0) < 0$, la funzione è 	concava.
+\item Se $f''(x_0) = 0$ e $f'''(x_0) \neq 0$, allora $x_0$ è un 	punto di flesso.
+\end{enumerate}
+
+\section*{Esempio}
+
+Consideriamo $f(x) = e^x - e^{-x} + 1$. Studiamo il comportamento in $x = -1$, $x = 0$, e $x = 1$:
+
+\begin{itemize}
+\item Derivata prima: 
+\item Derivata seconda: 
+\end{itemize}
+
+\subsection*{Calcoli}\begin{itemize}
+\item $f''(-1) = e^{-1} - e^1 = \frac{1}{e} - e < 0$ \quad \textbf{Punto di concavità in} $x=-1$.
+\item $f''(1) = e^1 - e^{-1} = e - \frac{1}{e} > 0$ \quad \textbf{Punto di convessità in} $x=1$.
+\item $f''(0) = e^0 - e^0 = 0$, quindi calcoliamo $f'''(x) = e^x + e^{-x}$:
+
+\textbf{Punto di flesso in} $x=0$.
+\end{itemize}
+
+\end{document}

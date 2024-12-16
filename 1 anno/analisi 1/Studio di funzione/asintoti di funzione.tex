@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\section*{Asintoti Orizzontali, Verticali e Obliqui}
+
+\subsection*{Asintoti Orizzontali}
+
+Abbiamo un asintoto orizzontale quando, considerando una retta orizzontale, la distanza tra essa e il grafico della funzione tende a 0.  
+
+Nella pratica, se 
+
+\[
+\lim_{x \to +\infty} f(x) = k \quad \text{con} \quad k \in \mathbb{R},
+\]
+
+allora ci potrebbe essere un asintoto orizzontale. Ma se
+
+\[
+\lim_{x \to -\infty} f(x) = h \quad \text{con} \quad h \in \mathbb{R} \quad \text{e} \quad h \neq k,
+\]
+
+la funzione ammette due asintoti orizzontali.
+
+\subsection*{Asintoti Verticali}
+
+Lo stesso vale per l'asintoto verticale. Considerando una retta verticale, nella pratica si ha che
+
+\[
+\lim_{x \to c} f(x) = +\infty \quad \text{o} \quad \lim_{x \to c} f(x) = -\infty.
+\]
+
+\subsection*{Esempio con Asintoto Verticale}
+
+Consideriamo la funzione
+
+\[
+f(x) = \frac{x}{|x - 2|}, \quad D = (-\infty, 2) \cup (2, +\infty),
+\]
+
+con il punto di discontinuità in \( x = 2 \). Calcoliamo i limiti a destra e a sinistra di 2:
+
+\[
+\lim_{x \to 2^+} f(x) = \frac{2}{0^+} = +\infty.
+\]
+
+In questo caso, la funzione ha un asintoto verticale in \( x = 2 \).
+
+\subsection*{Esempio con Asintoto Obliquo}
+
+Consideriamo la funzione
+
+\[
+f(x) = \frac{x |x| + x^2 + 1}{x}, \quad D = (-\infty, 0) \cup (0, +\infty).
+\]
+
+Verifichiamo prima la presenza di un asintoto verticale. Calcoliamo i limiti a destra e a sinistra di 0:
+
+\[
+\lim_{x \to 0^+} f(x) = +\infty,
+\]
+\[
+\lim_{x \to 0^-} f(x) = -\infty.
+\]
+
+Poiché i limiti a destra e a sinistra sono opposti e tendono all'infinito, \( x = 0 \) è un asintoto verticale.
+
+\subsection*{Asintoti Orizzontali}
+
+Verifichiamo la presenza di un asintoto orizzontale. Calcoliamo il limite per \( x \to -\infty \):
+
+\[
+\lim_{x \to -\infty} f(x) = \lim_{x \to -\infty} \frac{2x^2 + 1}{x} = 0,
+\]
+
+quindi \( y = 0 \) è un asintoto orizzontale.
+
+\subsection*{Asintoto Obliquo}
+
+Infine, verifichiamo l'esistenza di un asintoto obliquo. Calcoliamo il limite di \( \frac{f(x)}{x} \) per \( x \to +\infty \):
+
+\[
+m = \lim_{x \to +\infty} \frac{f(x)}{x} = \lim_{x \to +\infty} \frac{2x^2 + 1}{x^2} = 2.
+\]
+
+Poiché \( m = 2 \neq 0 \) e \( m \neq \infty \), possiamo affermare che esiste un asintoto obliquo. Calcoliamo il termine complementare \( q \):
+
+\[
+q = \lim_{x \to +\infty} \left( f(x) - mx \right) = \lim_{x \to +\infty} \left( \frac{2x^2 + 1}{x} - 2x \right) = 0.
+\]
+
+Poiché \( q = 0 \), la funzione ammette un asintoto obliquo di equazione \( y = 2x \).
+
+\end{document}
